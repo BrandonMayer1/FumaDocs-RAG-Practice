@@ -38,7 +38,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "scripts/embedDocs.mjs"  ],
   "exclude": [
     "node_modules"
   ]
