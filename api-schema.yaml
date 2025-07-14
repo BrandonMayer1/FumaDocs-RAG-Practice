@@ -1,0 +1,24 @@
+openapi: 3.0.4
+info:
+  title: My API
+  version: 1.0.0
+  description: A simple example API
+
+servers:
+  - url: http://localhost:3000
+    description: Local dev server
+
+paths:
+  /hello:
+    get:
+      summary: Returns a greeting
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string

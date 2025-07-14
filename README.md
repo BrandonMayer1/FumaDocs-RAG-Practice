@@ -6,7 +6,7 @@ This is a Next.js application generated with
 Run development server:
 
 ```bash
-npm build  ##First uploads all Docs to VECTOR DB from Chunking Strategys
+npm run build  ##First uploads all Docs to VECTOR DB from Chunking Strategys
 
 npm run dev
 # or
