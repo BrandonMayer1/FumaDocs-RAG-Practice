@@ -2,7 +2,8 @@
 
 This is a Next.js application generated with
 [Create Fumadocs](https://github.com/fuma-nama/fumadocs).
-
+## OPENAI BUILD
+node scripts/generate-docs.mjs
 Run development server:
 
 ```bash

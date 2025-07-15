@@ -19,6 +19,7 @@
     "fumadocs-ui": "15.6.3",
     "langchain": "^0.3.29",
     "next": "15.3.4",
+    "node-fetch": "^3.3.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "shiki": "^3.8.0"
