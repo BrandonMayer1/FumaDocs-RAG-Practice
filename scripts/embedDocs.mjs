@@ -85,7 +85,7 @@ async function sumarizeOpenAI(yamlContent){
         },
         {
             role: 'user',
-            content: 'Here is the Yaml:' + yamlContent
+            content: 'Here is the YAML: ' + yamlContent
         }
     ];
       
@@ -117,9 +117,8 @@ async function storeInChroma(embedding, text, documentName) {
     try{
         const collection = await client.getOrCreateCollection({name: 'markdown-store'});
         await collection.upsert({
-            ids: [Date.now().toString()],
+            ids: [documentName],
             embeddings: [embedding],
-            metadatas: [{name: documentName }],
             documents: [text]
         });
         console.log("|--STORED IN CHROMADB--|");
